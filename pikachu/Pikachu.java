@@ -1,9 +1,11 @@
+package pikachu;
+
 
 /**
  * Write a description of class Pikachu here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Allen Ng 
+ *8-24-15
  */
 public class Pikachu
 {
