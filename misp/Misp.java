@@ -48,3 +48,13 @@ public static void S()
 }
 public static void P()
 {
+    System.out.println("PPPPPP");
+    System.out.println("P     P");
+    System.out.println("P     P");
+    System.out.println("PPPPPP");
+    System.out.println("P");
+    System.out.println("P");
+    System.out.println("P");
+    System.out.println("P");
+}
+}
