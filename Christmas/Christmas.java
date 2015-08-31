@@ -1,3 +1,7 @@
+/*Allen Ng
+ * 8/31/15
+ * Revision 1
+ */
 public class Christmas
 {
     public static void twelve()

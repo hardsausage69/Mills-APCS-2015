@@ -1,83 +1,88 @@
+/*Allen Ng
+ * 8/31/15
+ * Revision 1
+ */
 public class OldLady
 {
     public static void main(String[] args)
     {
-        IKnow();
+        iKnow();
         System.out.println("fly,");
-        Fly();
+        fly();
         System.out.println();
-        IKnow();
+        iKnow();
         System.out.println("spider.");
-        Spider();
+        spider();
         System.out.println();
-        IKnow();
+        iKnow();
         System.out.println("bird,");
         System.out.println("How absurd to swallow a bird!");
-        Bird();
+        bird();
         System.out.println();
-        IKnow();
+        iKnow();
         System.out.println("cat,");
         System.out.println("Imagine that, to swallow a cat!");
-        Cat();
+        cat();
         System.out.println();
-        IKnow();
+        iKnow();
         System.out.println("dog,");
         System.out.println("My, what a hog, to swallow a dog!");
-        Dog();
+        dog();
         System.out.println();
-        IKnow();
+        iKnow();
         System.out.println("goat,");
         System.out.println("Just opened her throat and swallowed a goat!");
-        Goat();
+        goat();
         System.out.println();
-        IKnow();
+        iKnow();
         System.out.println("cow,");
         System.out.println("I wonder how she swallowed a cow?!");
+        cow();
         System.out.println();
-        Horse();
+        horse();
     }
-    public static void Horse()
+    public static void horse()
     {
         System.out.println("I know an old lady who swallowed a horse.");
         System.out.println("She's dead, of course.");
     }
-    public static void Fly()
+    public static void fly()
     {
         System.out.println("I don't know why she swallowed the fly,");
         System.out.println("I guess she'll die.");
     }
-    public static void Spider()
+    public static void spider()
     {
         System.out.println("That wriggled and jiggled and tickled inside her.");
         System.out.println("She swallowed the spider to catch the fly.");
-        Fly();
+        fly();
     }
-    public static void Bird()
+    public static void bird()
     {
         System.out.println("She swallowed the bird to catch the spider.");
-        Spider();
+        spider();
     }
-    public static void Cat()
+    public static void cat()
     { 
         System.out.println("She swallowed the cat to catch the bird.");
-        Bird();
+        bird();
     }
-    public static void Dog()
+    public static void dog()
     {
         System.out.println("She swallowed the dog to catch the cat.");
-        Cat();
+        cat();
     }
-    public static void Goat()
+    public static void goat()
     {
         System.out.println("She swallowed the goat to catch the dog.");
-        Dog();
+        dog();
     }
-    public static void Cow()
+    public static void cow()
     {
         System.out.println("She swallowed the cow to catch the goat.");
-        Goat();
+        goat();
     }
-    public static void IKnow()
+    public static void iKnow()
     {
         System.out.print("I know an old lady who swallowed a ");
     }
