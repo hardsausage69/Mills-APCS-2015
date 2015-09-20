@@ -9,7 +9,7 @@ public class HourGlass
         tip();
         for (int lines = 1; lines <= 4; lines++)
         { 
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= lines; i++)
             {
                 System.out.print(" ");
             }
@@ -26,5 +26,21 @@ public class HourGlass
         {
             for (int i = 1; i <= 5 - lines; i++)
             {
+             System.out.print(" ");   
             }
+            System.out.print("/");
+            for (int j = 4; j <= 5 - lines; j--)
+            {
+                System.out.print("::");
+            }
+            System.out.print("\\");
+            System.out.println();
+        }
+        tip();
+    }
+    public static void tip()
+    {
+        System.out.println("|\"\"\"\"\"\"\"\"\"\"|");
+    }
+}
                 
