@@ -31,21 +31,13 @@ public class Deck {
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-        for(int i = 0; i < ranks.size(); i++){
-            if(ranks.get(i) == "face"){
-                for(int k = 0; k < suits.size(); j++){
-                    Card faceCard = new Card(ranks.get(i), suits.get(j), values.get(i));
-                    cards.add(card);
-                }
-                ranks.remove(i);
-                values.remove(i);
-            }
-            for(int j = 0; j < suits.size(); j++){
-                Card card = new Card(ranks.get(i), suits.get(j), values.get(i));
+        for(int i = 0; i < ranks.length; i++){
+            for(int j = 0; j < suits.length; j++){
+                Card card = new Card(ranks[i], suits[j], values[i]);
                 cards.add(card);
             }
         }
-        cards.shuffle();
+        //cards.shuffle();
     }
 
 
@@ -86,6 +78,13 @@ public class Deck {
      */
     public Card deal() {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        int i = cards.size();
+        i -= 1;
+        if(i == -1){
+            return null;
+        } else {
+            return cards.get(i);
+        }       
     }
 
     /**
